@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CLRMK</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="side-nav">
+  <div class="nav-dot active" data-target="hero"></div>
+  <div class="nav-dot" data-target="video-section"></div>
+  <div class="nav-dot" data-target="section-bg"></div>
+  <div class="nav-dot" data-target="manzanita"></div>
+  <div class="nav-dot" data-target="alba-sec"></div> <div class="nav-dot" data-target="cinta-sec"></div>
+  <div class="nav-dot" data-target="footer-sec"></div>
+</div>
+
+<section class="section hero" id="hero">
+  <div class="hero-logo-container">
+    <img src="img/CLRMKazul.png" class="heroLogo" id="heroLogo" alt="CLRMK Azul">
+  </div>
+  <h1 class="typing-text" id="typingText"></h1>
+  <div class="bananas">
+    <img src="img/banana.png" class="banana b1" alt="banana">
+    <img src="img/banana.png" class="banana b2" alt="banana">
+    <img src="img/banana.png" class="banana b3" alt="banana">
+  </div>
+  <div class="scroll-arrow" id="scrollArrow">
+    <svg viewBox="0 0 24 24">
+      <path d="M7.41,8.59L12,13.17L16.59,8.59L18,10L12,16L6,10L7.41,8.59Z" />
+    </svg>
+  </div>
+</section>
+
+
+
+<section class="section video-section" id="video-section">
+    <canvas id="text-canvas"></canvas>
+<video autoplay muted loop playsinline>
+  <source src="img/Video.mp4" type="Video/mp4">
+</video>
+</section>
+
+<section class="section section-bg" id="section-bg">
+  <div class="grid-3">
+    <img src="img/1.jpeg" alt="Grid 1"/>
+    <img src="img/2.jpg" alt="Grid 2"/>
+    <img src="img/3.JPG" alt="Grid 3"/>
+  </div>
+  
+  <img src="img/952.png" class="overlay952" alt="Overlay">
+  
+  <div class="text-block">
+    <p class="main-p"><strong>CLRMK.</strong> Es un book que nació del impulso de crear sin un propósito definido, como una forma de exploración visual y movimiento constante.</p>
+    <p class="sub-p">No hay que dejar el agua estancada, las ideas sin salir, ni el alma reprimida.<strong>No lo pienses tanto.</strong>Hacelo.</p>
+    <p class="date-p">Claromecó, Abril 2025</p>
+  </div>
+
+  <div class="grid-2">
+    <img src="img/4.jpg" alt="Grid 4"/>
+    <img src="img/5.jpg" alt="Grid 5"/>
+  </div>
+</section>
+
+<section class="apple-section" id="manzanita">
+  <div class="apple-wrapper">
+<div class="apple-container" id="appleContainer" onclick="activarManzana()">
+      
+      <div class="slice">
+        <img src="img/manzana/mt1.png" class="img-apple img-closed" alt="mt1">
+        <img src="img/M1.png" class="img-apple img-opened" alt="m1">
+      </div>
+      <div class="slice">
+        <img src="img/manzana/mt2.png" class="img-apple img-closed" alt="mt2">
+        <img src="img/m2.png" class="img-apple img-opened" alt="m2">
+      </div>
+      <div class="slice">
+        <img src="img/manzana/mt3.png" class="img-apple img-closed" alt="mt3">
+        <img src="img/m3.png" class="img-apple img-opened" alt="m3">
+      </div>
+      <div class="slice">
+        <img src="img/manzana/mt4.png" class="img-apple img-closed" alt="mt4">
+        <img src="img/m4.png" class="img-apple img-opened" alt="m4">
+      </div>
+      <div class="slice">
+        <img src="img/manzana/mt5.png" class="img-apple img-closed" alt="mt5">
+        <img src="img/m5.png" class="img-apple img-opened" alt="m5">
+      </div>
+      <div class="slice">
+        <img src="img/manzana/mt6.png" class="img-apple img-closed" alt="mt6">
+        <img src="img/m6.png" class="img-apple img-opened" alt="m6">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="interactive-images-wrapper">
+  <section class="section full alba canvas-trigger" id="alba-sec" data-src="img/Alba.jpg">
+    <img src="img/Alba.jpg" class="base-img" alt="Alba"/>
+  </section>
+
+  <div class="clrmkrojo">
+    <img src="img/CLRMKrojo.png" alt="CLRMK Rojo"/>
+  </div>
+
+  <section class="section full leandro canvas-trigger" id="leandro-sec" data-src="img/Leandro.png">
+    <img src="img/Leandro.png" class="base-img" alt="Leandro"/>
+  </section>
+</div>
+
+<div class="cinta" id="cinta-sec">
+  <div class="track">
+    <img src="img/cinta/1.png" alt="1"/>
+    <img src="img/cinta/2.png" alt="2"/>
+    <img src="img/cinta/3.JPG" alt="3"/>
+    <img src="img/cinta/4.png" alt="4"/>
+    <img src="img/cinta/5.png" alt="5"/>
+    <img src="img/cinta/6.JPG" alt="6"/>
+    <img src="img/cinta/7.jpg" alt="7"/>
+    <img src="img/cinta/8.png" alt="8"/>
+    <img src="img/cinta/10.png" alt="10"/>
+    <img src="img/cinta/11.JPG" alt="11"/>
+    <img src="img/cinta/9.png" alt="9"/>
+    <img src="img/cinta/12.png" alt="12"/>
+  </div>
+</div>
+
+<footer class="footer" id="footer-sec">
+  <p>CLRMK | 2025</p>
+  <p>Alba Larriqueta, Leandro Canonico y Lola Castro</p>
+  <p>Creado por Olivia Etchegaray (ESTRELLADA)</p>
+  <a href="https://www.instagram.com/estrelladaonline/" target="_blank">
+    <img src="img/estrellada.png" class="insta" alt="Instagram"/>
+  </a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
